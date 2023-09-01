@@ -13,6 +13,10 @@
     transition: .5s;
 }
 
+.nowrap {
+    text-wrap: nowrap;
+}
+
 .btn-primary,
 .btn-secondary {
     color: #FFFFFF;
@@ -98,7 +102,7 @@
 }
 
 .bg-hero {
-    background: url(../img/carousel-1.jpg) top right no-repeat;
+    background: url(../img/carousel-1-1.jpg) top right no-repeat;
     background-size: cover;
 }
 
@@ -111,11 +115,11 @@
 }
 
 .bg-vegetable {
-    background: linear-gradient(rgba(52, 173, 84, .2), rgba(52, 173, 84, .2)), url(../img/vegetable.png) bottom right no-repeat;
+    background: linear-gradient(rgba(52, 173, 84, .2), rgba(52, 173, 84, .2)), url(../img/vegetable-1.png) bottom right no-repeat;
     background-size: contain;
 }
 
-.bg-fruit {
+.bg-meat {
     background: linear-gradient(rgba(255, 153, 51, .2), rgba(255, 153, 51, .2)), url(../img/fruit.png) bottom right no-repeat;
     background-size: contain;
 }
@@ -267,6 +271,10 @@
     transform: scale(1.2);
 }
 
+.blog-item:hover .blog-overlay {
+    background: linear-gradient(rgba(52, 173, 84, 0), rgba(52, 173, 84, 1));
+}
+
 .blog-overlay {
     position: absolute;
     padding: 30px;
@@ -274,11 +282,12 @@
     height: 100%;
     top: 0;
     left: 0;
+    transition: .25s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: linear-gradient(rgba(52, 173, 84, 0), rgba(52, 173, 84, 1));
+    background: linear-gradient(rgba(52, 173, 84, 0), rgba(52, 173, 84, .5));
     z-index: 1;
 }
 
